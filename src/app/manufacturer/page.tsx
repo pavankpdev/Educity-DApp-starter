@@ -45,7 +45,7 @@ export default function Home() {
                                   <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                           stroke-linejoin="round" className="feather feather-dollar-sign" className="w-5 h-5 text-gray-500 dark:text-gray-400">
+                                           stroke-linejoin="round" className="w-5 h-5 text-gray-500 dark:text-gray-400">
                                           <line x1="12" y1="1" x2="12" y2="23"></line>
                                           <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                                       </svg>
