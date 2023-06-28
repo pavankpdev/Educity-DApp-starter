@@ -18,6 +18,8 @@ const Navbar: React.FC<Props> = ({CTAType}) => {
 
     const router = useRouter()
 
+    const isOwner = true;
+
     return <>
         <nav
             className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
@@ -27,6 +29,18 @@ const Navbar: React.FC<Props> = ({CTAType}) => {
                         <span
                             className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SupplyChain</span>
                 </Link>
+                {
+                    isOwner &&
+                    <div>
+                        <ul>
+                            <li>
+                                <Link href="/owner">
+                                    commissions
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                }
                 <div className="flex gap-2">
                     <Wallet />
                     <button
