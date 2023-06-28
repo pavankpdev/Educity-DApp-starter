@@ -1,4 +1,3 @@
-import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 
@@ -15,11 +14,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar CTAType={"Manufacturer"} />
-        {children}
-      </body>
-    </html>
+       <>
+           <Navbar CTAType={'Consumer'} />
+           {children}
+       </>
   )
 }
